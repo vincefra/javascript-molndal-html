@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background: #1b1b1b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.grid > div#pic {
+  background: #000;
+}
+
+body {
+  margin: 2rem;
+  font: 12px system-ui;
+  color: #f5d67b;
+  font-size: 15px;
+}
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+}
+@media only screen and (max-width: 680px) {
+  body {
+    color: #72e0d1;
+  }
+}
